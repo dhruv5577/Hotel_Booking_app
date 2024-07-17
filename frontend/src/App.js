@@ -1,12 +1,14 @@
 import {RouterProvider,createBrowserRouter} from 'react-router-dom'
 import Home from './Pages/Home';
 import Events,{loader as eventsloader} from './Pages/Events';
-import EventDetails ,{loader as eventdetailsloader}from './Pages/EventDetails';
+import EventDetails ,{loader as eventdetailsloader,action as deleteevent} from './Pages/EventDetails';
 import NewEvent from './Pages/NewEvent';
 import EditEvent from './Pages/EditEvent';
 import Root from './Pages/Root';
 import EventsRoot from './Pages/EventsRoot';
 import Erros from './Pages/Erros';
+import { action as manipulateevents} from './components/EventForm'
+
 
 const router=createBrowserRouter([
   {path:'/',
@@ -17,18 +19,6 @@ const router=createBrowserRouter([
     {path:'events',element:<EventsRoot/>,children:[
     
       
-      // {path:':eventId',
-      //   id:'event-details',
-      //   loader:eventsloader ,
-      //   children:[
-        
-      //   {
-      //     path:'edit',
-      //     element:<EditEvent/>,
-        
-      //   }
-      // ]},
-      
       {index:true,element:<Events/>, loader:eventsloader},
       {
         path:':eventId',
@@ -37,13 +27,14 @@ const router=createBrowserRouter([
         children:[
           {
             index:true,
-            element:<EventDetails/>
+            element:<EventDetails/>,
+            action:deleteevent
           },
-          {path:'edit',element:<EditEvent/>}
+          {path:'edit',element:<EditEvent/>,action:manipulateevents}
         ]
       },
       
-      {path:'new',element:<NewEvent/>},
+      {path:'new',element:<NewEvent/>,action:manipulateevents},
       
     ]}
     

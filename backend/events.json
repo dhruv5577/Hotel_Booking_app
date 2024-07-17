@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"holaa..???","image":"https://www.google.com/imgres?q=f1%20images&imgurl=https%3A%2F%2Fcar-images.bauersecure.com%2Fwp-images%2F177956%2F1752x1168%2Ffront_qtr_lh_v001.jpg%3Fmode%3Dmax%26quality%3D90%26scale%3Ddown&imgrefurl=https%3A%2F%2Fwww.carmagazine.co.uk%2Ffeatures%2Fcar-culture%2Ff1-2024-car-reveal%2F&docid=ubXfzs16UaH7oM&tbnid=0V4Tze0nZn5IyM&vet=12ahUKEwiJ36nPrauHAxW_WGwGHfhvCcsQM3oFCIQBEAA..i&w=1752&h=986&hcb=2&ved=2ahUKEwiJ36nPrauHAxW_WGwGHfhvCcsQM3oFCIQBEAA","date":"2024-07-19","description":"nolBIUD ubbfkje","id":"61ac5afa-ee0b-4962-a3cf-a5176a88f690"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
